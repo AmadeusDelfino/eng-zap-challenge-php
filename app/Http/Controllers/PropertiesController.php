@@ -17,16 +17,16 @@ class PropertiesController extends Controller
     public function getVivaReal(Request $request)
     {
         return response()->json($this->service->getVivaRealProperties(
-            $request->get('page', 1),
-            $request->get('pageSize', 10)
+            round($request->get('page', 1)),
+            round($request->get('pageSize', 10))
         ));
     }
 
     public function getZap(Request $request)
     {
         return response()->json($this->service->getZapProperties(
-            $request->get('page', 1),
-            $request->get('pageSize', 10)
+            round($request->get('page', 1)),
+            round($request->get('pageSize', 10))
         ));
     }
 }
