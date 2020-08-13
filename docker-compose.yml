@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  web:
+    build:
+      context: ./docker/web
+      dockerfile: web.docker
+    volumes:
+      - ./:/var/www
+    ports:
+      - "8080:80"
+    links:
+      - app
+
+  app:
+    build:
+      context: ./docker/php
+      dockerfile: php.docker
+    volumes:
+      - ./:/var/www

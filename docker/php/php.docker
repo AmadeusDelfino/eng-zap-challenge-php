@@ -1,0 +1,10 @@
+FROM php:7-fpm
+
+RUN apt-get update && apt-get install -y libmcrypt-dev
+
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+RUN php composer-setup.php --filename=composer --install-dir=/usr/bin
+RUN php -r "unlink('composer-setup.php');"
+
+WORKDIR /var/www
+

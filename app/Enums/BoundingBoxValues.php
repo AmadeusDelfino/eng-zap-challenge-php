@@ -1,0 +1,14 @@
+<?php
+
+
+namespace App\Enums;
+
+
+final class BoundingBoxValues
+{
+    CONST BOUNDING_BOX_MIN_LON = -46.693419;
+    CONST BOUNDING_BOX_MAX_LON = -46.641146;
+    CONST BOUNDING_BOX_MIN_LAT = -23.568704;
+    CONST BOUNDING_BOX_MAX_LAT = -23.546686;
+
+}
