@@ -16,7 +16,8 @@ Também e possível utilizar o projeto utilizando Docker com docker-compose (mé
 ## Instalação  
   
 A instalação do projeto e simples, sendo necessário executar o comando `composer install`. Dessa forma, o Composer vai instalar todas as dependências necessárias no projeto.  
-Caso voce escolha utilizar Docker, não e necessário ter o Composer localmente e poderá utilizar o já instalado no contanier com o seguinte comando: `docker-compose exec app composer update`  
+Caso voce escolha utilizar Docker, não e necessário ter o Composer localmente e poderá utilizar o já instalado no contanier com o seguinte comando: `docker-compose exec app composer update`.
+Apos a execuçao do composer, copie o arquivo .env.example para .env  
   
 ## Testes  
   
@@ -39,4 +40,3 @@ O sistema contem os seguintes endpoints:
 ## Consideraçoes finais  
 - Por questao de simplicidade, recomendo utilizar o Docker para a execuçao do projeto. A porta padrao e a :8080  
 - A utilizaçao de handlers nos services nos proporciona diversos beneficios tecnicos, como adequaçao aos conceitos do S.O.L.I.D, facilidade de manutencao e reutilizaçao de codigo  
-- A performance da aplicaçao
