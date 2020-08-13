@@ -11,7 +11,10 @@ use App\Traits\PropertyResponseMake;
 
 class ZapHandler
 {
-    use PropertyLocationIsValid, PropertyResponseMake, IsInBoundingBox;
+    use
+        PropertyLocationIsValid,
+        PropertyResponseMake,
+        IsInBoundingBox;
 
     CONST MAX_SQUARE_PRICE = 3500;
     CONST RENTAL_MIN_VALUE = 3500;
